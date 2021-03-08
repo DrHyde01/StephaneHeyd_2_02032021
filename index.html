@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Utilisation d'une Google font -->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
-        <title>Reservia</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Utilisation d'une Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"/>
+    <!-- Utilisation d'un kit Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/1d8f57007c.js"
+      crossorigin="anonymous"></script>
+    <title>Reservia</title>
+  </head>
 
-    <body>
-        <header>
-            <div id="logo">
-                <img src="images/logo/Reservia@3x.png" alt="logo_Reservia" />
-            </div>
-            
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
+  <body>
+    <div id="bloc_page">
+      <header>
+        <div id="logo">
+          <img src="images/logo/Reservia@3x.png" alt="logo_Reservia" />
+        </div>
 
-            <nav> <!-- Incorporer le nav dans le header ?-->
-                <ul>
-                    <li><a href="#hébergements">Hébergements</a></li> <!-- Utilisation d'ancres vers d'autres parties de la page-->
-                    <li><a href="#activités">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-    </body>
+        <nav>
+          <ul>
+            <!-- Utilisation d'ancres vers d'autres parties de la page-->
+            <li><a href="#hébergements">Hébergements</a></li>
+            <li><a href="#activités">Activités</a></li>
+            <li><a href="#">S'inscrire</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
+        <!-- Mise en place du formulaire de recherche -->
+          <form method="post" action="villes.php">
+            <i class="fas fa-map-marker-alt icon_gps"></i> <!-- Insertion d'une icône Font-->
+            <input type="text" name="ville" value="Marseille, France" /> 
+            <button type="submit">Rechercher</button>
+          </form>
+      </section>
+    </div>
+  </body>
 </html>
