@@ -1,0 +1,71 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo
+{
+    /* Positionnement du logo en retrait du menu de navigation */
+    position: relative;
+    left: 30px;
+    top: 8px;
+    width: 6rem;
+}
+
+nav
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.menu_item
+{
+    padding: 0rem 1rem 0rem 1rem; /* Afin de faire dépasser border-top du texte */
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_item:hover /* Apparition d'une border-top et changement de couleur des liens lors du passage */
+{
+    border-top: solid 1px #0065FC;
+    color: #0065FC;  
+}
+
+.subscribe
+{
+    font-weight: bolder;
+    color: #0065FC;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit; /* Utilisation de la couleur du parent, plus de liens bleus */
+}
