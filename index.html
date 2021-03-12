@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <!--Utilisation d'une Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!-- Utilisation d'une Google font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- Utilisation d'un kit Font Awesome-->
@@ -31,31 +31,46 @@
       </nav>
     </header>
 
-    <section>
+    <section id="recherche">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <h2>En plein centre ville ou en pleine nature</h2>
       <!-- Mise en place du formulaire de recherche -->
-      <form method="post" action="villes.php">
-        <i class="fas fa-map-marker-alt icon_gps"></i>
-        <!-- Insertion d'une icône Font et d'une classe plus ciblée pour le css-->
-        <input type="text" name="ville" value="Marseille, France" />
-        <button type="submit">Rechercher</button>
+      <form method="post" action="#">
+        <div id="ico_gps">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <!-- Insertion d'une icône Font Awesome-->
+        <input type="text" name="ville" placeholder="Marseille, France" />
+        <button type="submit"><a href="#">Rechercher</a></button>
       </form>
-    </section>
-
-    <section>
       <div id="filtres">
-        <h3>Filtres</h3>
-        <p><i class="fas fa-money-bill-wave-alt"></i>Économique</p>
-        <p><i class="fas fa-child"></i>Familial</p>
-        <p><i class="fas fa-heart"></i>Romantique</p>
-        <p><i class="fas fa-dog"></i>Animaux acceptés</p>
+        <h2 class="filtre_title">Filtres</h2>
+        <div class="filtre_container">
+          <div class="filtre_button">
+            <div class="icon_filter">
+              <i class="fas fa-money-bill-wave-alt"></i>
+            </div>
+            <p><a href="#">Économique</a></p>
+          </div>
+          <div class="filtre_button">
+            <div class="icon_filter"><i class="fas fa-child"></i></div>
+            <p><a href="#">Familial</a></p>
+          </div>
+          <div class="filtre_button">
+            <div class="icon_filter"><i class="fas fa-heart"></i></div>
+            <p><a href="#">Romantique</a></p>
+          </div>
+          <div class="filtre_button">
+            <div class="icon_filter"><i class="fas fa-dog"></i></div>
+            <p><a href="#">Animaux autorisés</a></p>
+          </div>
+        </div>
       </div>
 
-      <p>
-        <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
-        cette ville
-      </p>
+      <div id="infos">
+        <div class="info_icon"><i class="fas fa-info"></i></div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
     </section>
 
     <section id="hébergements">

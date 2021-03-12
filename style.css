@@ -1,71 +1,201 @@
-*
-{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body
-{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
 
-header
-{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.logo
-{
-    /* Positionnement du logo en retrait du menu de navigation */
-    position: relative;
-    left: 30px;
-    top: 8px;
-    width: 6rem;
+.logo {
+  /* Positionnement du logo en retrait du menu de navigation */
+  position: relative;
+  left: 30px;
+  top: 8px;
+  width: 6rem;
 }
 
-nav
-{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.menu
-{
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style-type: none;
+.menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
-.menu_item
-{
-    padding: 0rem 1rem 0rem 1rem; /* Afin de faire dépasser border-top du texte */
-    height: 110px;
-    display: flex;
-    align-items: center;
+.menu_item {
+  padding: 0rem 1rem 0rem 1rem; /* Afin de faire dépasser border-top du texte */
+  height: 110px;
+  display: flex;
+  align-items: center;
 }
 
-.menu_item:hover /* Apparition d'une border-top et changement de couleur des liens lors du passage */
-{
-    border-top: solid 1px #0065FC;
-    color: #0065FC;  
+.menu_item:hover /* Apparition d'une border-top et changement de couleur des liens lors du passage */ {
+  border-top: solid 1px #0065fc;
+  color: #0065fc;
 }
 
-.subscribe
-{
-    font-weight: bolder;
-    color: #0065FC;
+.subscribe {
+  font-weight: bolder;
+  color: #0065fc;
 }
 
-a
-{
-    text-decoration: none;
-    color: inherit; /* Utilisation de la couleur du parent, plus de liens bleus */
+a {
+  text-decoration: none;
+  color: inherit; /* Utilisation de la couleur du parent, plus de liens bleus */
+}
+
+#recherche {
+  margin-left: 30px;
+}
+
+h1 {
+  padding: 2px 0px 2px 0px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 2px 0px 2px 0px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+form {
+  padding: 5px 0px 5px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#ico_gps {
+  height: 50px;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+}
+
+input {
+  height: 50px;
+  width: 14rem;
+  padding-left: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  border-top: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+  border-left: none;
+  border-right: none;
+}
+
+button {
+  height: 50px;
+  width: 130px;
+  font-size: 1em;
+  color: #ffff;
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+input::placeholder /* Rendre le placeholder noir sous Firefox */ {
+  color: black;
+  opacity: 1;
+  font-weight: normal;
+}
+
+#filtres {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.filtre_title {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.filtre_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filtre_button /* Personnalisation des filtres */ {
+  height: 50px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  border: solid 2px #f2f2f2;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.filtre_button:hover {
+  background-color: #f4f6fa;
+}
+
+.filtre_button p {
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.icon_filter {
+  background-color: #deebff;
+  color: #0065fc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#infos {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: -4px; /* Décalage de l'icône vers la gauche pour être mieux alignée */
+}
+
+.info_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  font-size: 0.8em;
+  padding-bottom: 2px; /* L'icône ne se centrait pas verticalement malgré flex */
+  width: 25px;
+  height: 25px;
+  border: solid 2px #f2f2f2;
+  border-radius: 50%;
+}
+
+#infos > p {
+  margin-left: 10px;
 }
