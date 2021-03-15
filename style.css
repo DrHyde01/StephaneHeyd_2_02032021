@@ -39,12 +39,13 @@ nav {
   list-style-type: none;
 }
 
-.menu_item {
+.menu_item 
+  {
   padding: 0rem 1rem 0rem 1rem; /* Afin de faire dépasser border-top du texte */
   height: 110px;
   display: flex;
   align-items: center;
-}
+  }
 
 .menu_item:hover /* Apparition d'une border-top et changement de couleur des liens lors du passage */ {
   border-top: solid 1px #0065fc;
@@ -199,3 +200,146 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
 #infos > p {
   margin-left: 10px;
 }
+
+#hébergements {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#adresses {
+  background-color: #f2f2f2;
+  width: 70%;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+}
+
+#adresses_container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Ne semble pas encore compatible avec Safari */
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+#adresses_container figure {
+  width: 260px;
+  height: 190px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px #bdbdbd;
+  transition: transform 300ms; /* cf hover */
+}
+
+#adresses_container figure:hover /* Ajout d'une animation au passage de la souris */ {
+  transform: translateY(-5px);
+}
+
+#adresses_container figure > img {
+  width: 260px;
+  height: 120px;
+  object-fit: cover; /* Permet d'adapter l'image au conteneur */
+  border: solid 4px white;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#adresses > h1 {
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+#adresses > h2 {
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+#adresses figcaption {
+  padding-left: 15px;
+  line-height: 1.2em;
+}
+
+.fa-star {
+  color: #0065fc;
+  font-size: 0.8em;
+}
+.star_grey {
+  color: rgb(219, 217, 217);
+  font-size: 0.8em;
+}
+
+figcaption h3 {
+  font-size: 1em;
+}
+
+figcaption p {
+  font-size: 0.8em;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+#populaires {
+    height: auto;
+    width: 400px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding-top: 25px;
+
+  }
+
+#aside_title
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  #populaires_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  #populaires_container figure {
+    display: flex;
+    width: 333px;
+    height: 130px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px #bdbdbd;
+    transition: transform 300ms; /* cf hover */
+  }
+
+  #populaires_container figure:hover /* Ajout d'une animation au passage de la souris */ {
+    transform: translateY(-5px);
+  }
+
+  #populaires_container figure > img {
+    width: 120px;
+    height: 130px;;
+    object-fit: cover; /* Permet d'adapter l'image au conteneur */
+    border: solid 4px white;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  #populaires figcaption {
+    padding-left: 15px;
+    padding-top: 15px;
+    line-height: 1.2em;
+  }
+
+  
+
+  
