@@ -18,19 +18,21 @@
   </head>
 
   <body>
+    <!-- HEADER-->
     <header>
       <img class="logo" src="images/logo/Reservia@3x.png" alt="logo_Reservia" />
-
       <nav>
         <ul class="menu">
           <!-- Utilisation d'ancres vers d'autres parties de la page-->
           <li class="menu_item"><a href="#hébergements">Hébergements</a></li>
           <li class="menu_item"><a href="#activités">Activités</a></li>
-          <li class="menu_item subscribe"><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
+      <!-- Le lien d'inscription placé en dehors de nav-->
+      <a class="subscribe" href="#">S'inscrire</a>
     </header>
 
+    <!-- RECHERCHE & FILTRES-->
     <section id="recherche">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <h2>En plein centre ville ou en pleine nature</h2>
@@ -41,7 +43,7 @@
         </div>
         <!-- Insertion d'une icône Font Awesome-->
         <input type="text" name="ville" placeholder="Marseille, France" />
-        <button type="submit"><a href="#">Rechercher</a></button>
+        <button type="submit">Rechercher</button>
       </form>
       <div id="filtres">
         <h2 class="filtre_title">Filtres</h2>
@@ -73,6 +75,7 @@
       </div>
     </section>
 
+    <!-- HEBERGEMENTS-->
     <section id="hébergements">
       <div id="adresses">
         <!-- id permettant de rajouter le bloc gris en css-->
@@ -193,6 +196,7 @@
         <h2>Afficher plus</h2>
       </div>
 
+      <!-- HEBERGEMENTS POPULAIRES-->
       <aside id="populaires">
         <!-- Même principe que pour le bloc hébergerments-->
         <div id="aside_title">
@@ -208,8 +212,12 @@
                 alt="Hötel Le soleil du Matin"
               />
               <figcaption>
-                <h3>Hôtel Le soleil du <br /> Matin</h3>
-                <p>Nuit à partir de <em>128€</em></p><br />
+                <h3>
+                  Hôtel Le soleil du <br />
+                  Matin
+                </h3>
+                <p>Nuit à partir de <em>128€</em></p>
+                <br />
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -227,7 +235,8 @@
               />
               <figcaption>
                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                <p>Nuit à partir de <em>71€</em></p> <br />
+                <p>Nuit à partir de <em>71€</em></p>
+                <br />
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -245,7 +254,8 @@
               />
               <figcaption>
                 <h3>Hôtel Tout Bleu et Blanc</h3>
-                <p>Nuit à partir de <em>68€</em></p> <br /> 
+                <p>Nuit à partir de <em>68€</em></p>
+                <br />
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -258,14 +268,14 @@
       </aside>
     </section>
 
+    <!-- ACTIVITES-->
     <section id="activités">
       <h1>Activités à Marseille</h1>
 
-      <div class="grid">
+      <div id="grid">
         <!-- Mise en place de la grille pour placer les 6 éléments-->
 
         <div class="vieux_port">
-          <!-- grid: span 6 lignes-->
           <a href="#">
             <figure>
               <img
@@ -280,7 +290,6 @@
         </div>
 
         <div class="fort">
-          <!-- grid: en haut -->
           <a href="#">
             <figure>
               <img
@@ -295,7 +304,6 @@
         </div>
 
         <div class="îles">
-          <!-- grid: en bas-->
           <a href="#">
             <figure>
               <img
@@ -303,14 +311,13 @@
                 alt="Îles du Frioul"
               />
               <figcaption>
-                <h3>Îles du Firoul</h3>
+                <h3>Îles du Frioul</h3>
               </figcaption>
             </figure>
           </a>
         </div>
 
         <div class="parc_calanques">
-          <!-- grid: span 6 lignes-->
           <a href="#">
             <figure>
               <img
@@ -325,7 +332,6 @@
         </div>
 
         <div class="notre_dame">
-          <!-- grid: en haut-->
           <a href="#">
             <figure>
               <img
@@ -339,8 +345,7 @@
           </a>
         </div>
 
-        <div class="parc-longchamp">
-          <!-- grid: en bas-->
+        <div class="parc_longchamp">
           <a href="#">
             <figure>
               <img
@@ -353,28 +358,29 @@
             </figure>
           </a>
         </div>
-
-        <footer>
-          <ul>
-            <li><h2>A propos</h2></li>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-          </ul>
-
-          <ul>
-            <li><h2>Nos hébergements</h2></li>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
-          </ul>
-
-          <ul>
-            <li><h2>Assistance</h2></li>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-          </ul>
-        </footer>
       </div>
     </section>
+
+    <!-- FOOTER-->
+    <footer>
+      <ul>
+        <li><h2>A propos</h2></li>
+        <li><a href="#">Fonctionnement du site</a></li>
+        <li><a href="#">Conditions générales de vente</a></li>
+        <li><a href="#">Données et confidentialité</a></li>
+      </ul>
+
+      <ul>
+        <li><h2>Nos hébergements</h2></li>
+        <li><a href="#">Charte qualité</a></li>
+        <li><a href="#">Soumettre votre hôtel</a></li>
+      </ul>
+
+      <ul>
+        <li><h2>Assistance</h2></li>
+        <li><a href="#">Centre d'aide</a></li>
+        <li><a href="#">Nous contacter</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
