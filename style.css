@@ -46,9 +46,9 @@ nav {
 @media screen and (min-width: 320px) and (max-width: 750px) {
   nav {
     order: 3;
-    height: 20%;
     width: 100%;
-    margin-left: 0;
+    margin-top: 20px;
+    
   }
 }
 
@@ -69,10 +69,27 @@ nav {
   align-items: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .menu_item {
+    height: 40px;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    border-bottom: solid 2px #f2f2f2;
+  }
+}
+
 .menu_item:hover /* Apparition d'une border-top et changement de couleur des liens lors du passage */ {
   border-top: solid 1px #0065fc;
   color: #0065fc;
   justify-self: end;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) /* hover semble pas adapté aux mobiles, à vérifier */ {
+  .menu_item:hover {
+    border-top: none;
+    border-bottom: solid 2px #0065fc;
+  }
 }
 
 .subscribe {
