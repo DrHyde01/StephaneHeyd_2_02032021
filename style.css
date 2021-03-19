@@ -114,7 +114,7 @@ a {
   color: inherit; /* Utilisation de la couleur du parent, plus de liens bleus */
 }
 
-/* RECHERCHE & FILTRES */ 
+/* RECHERCHE & FILTRES */
 
 #recherche {
   margin-left: 30px;
@@ -317,10 +317,9 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
 }
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
-.info_icon
-{
-  width: 30px;
-}
+  .info_icon {
+    width: 30px;
+  }
 }
 
 #infos > p {
@@ -335,8 +334,20 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #hébergements {
+    flex-wrap: wrap-reverse;
+  }
+}
+
 #hébergements > * {
   margin: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #hébergements > * {
+    margin: 0;
+  }
 }
 
 #adresses {
@@ -347,6 +358,14 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   border-radius: 15px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
 #adresses_container {
   display: flex;
   justify-content: center;
@@ -355,8 +374,20 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses_container {
+    padding-bottom: 20px;
+  }
+}
+
 #adresses_container > * {
   margin: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses_container > * {
+    margin: 10px;
+  }
 }
 
 #adresses_container figure {
@@ -368,8 +399,21 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   transition: transform 300ms; /* cf hover */
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses_container figure {
+    width: 333px;
+    transition: none;
+  }
+}
+
 #adresses_container figure:hover /* Ajout d'une animation au passage de la souris */ {
   transform: translateY(-5px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses_container figure:hover {
+    transform: none;
+  }
 }
 
 #adresses_container figure > img {
@@ -380,14 +424,32 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   border-radius: 15px 15px 0px 0px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses_container figure > img {
+    width: 100%;
+  }
+}
+
 #adresses > h1 {
   font-weight: bold;
   padding-left: 40px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses > h1 {
+    padding-left: 20px;
+  }
+}
+
 #adresses > h2 {
   font-weight: bold;
   padding-left: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #adresses > h2 {
+    padding-left: 20px;
+  }
 }
 
 #adresses figcaption {
@@ -417,6 +479,8 @@ em {
   font-style: normal;
 }
 
+/* HEBERGEMENTS POPULAIRES */
+
 #populaires {
   height: auto;
   width: auto;
@@ -425,12 +489,26 @@ em {
   padding-top: 30px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #populaires {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
 #aside_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 35px;
   padding-right: 35px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #aside_title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 #populaires_container {
@@ -445,8 +523,23 @@ em {
   padding-right: 16px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #populaires_container {
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 #populaires_container > * {
   margin: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #populaires_container > * {
+    margin: 10px;
+  }
 }
 
 #populaires_container figure {
@@ -459,8 +552,21 @@ em {
   transition: transform 300ms; /* cf hover */
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #populaires_container figure {
+    width: 333px;
+    transition: none;
+  }
+}
+
 #populaires_container figure:hover /* Ajout d'une animation au passage de la souris */ {
   transform: translateY(-5px);
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #populaires_container figure:hover {
+    transform: none;
+  }
 }
 
 #populaires_container figure > img {
@@ -476,6 +582,8 @@ em {
   padding-top: 15px;
   line-height: 1.2em;
 }
+
+/* ACTIVITES */
 
 #activités {
   margin: 30px;
@@ -494,6 +602,13 @@ em {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 #grid figure {
@@ -595,6 +710,8 @@ em {
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
+
+/* FOOTER */
 
 footer {
   background: #f2f2f2;
