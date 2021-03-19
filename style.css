@@ -363,6 +363,7 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
     background-color: white;
     width: 100%;
     border-radius: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -529,6 +530,8 @@ em {
     padding-bottom: 25px;
     padding-left: 0;
     padding-right: 0;
+    align-items: initial;
+    margin: 10px;
   }
 }
 
@@ -554,7 +557,7 @@ em {
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
   #populaires_container figure {
-    width: 333px;
+    width: 100%;
     transition: none;
   }
 }
@@ -590,6 +593,12 @@ em {
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #activités {
+    margin: 20px;
+  }
+}
+
 #activités h1 {
   padding-top: 15px;
   padding-bottom: 20px;
@@ -606,8 +615,19 @@ em {
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
   #grid {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #grid > * {
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -618,6 +638,12 @@ em {
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 2px 15px #bdbdbd;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #grid figure {
+    height: 190px;
+  }
 }
 
 #grid figcaption {
@@ -637,6 +663,12 @@ em {
   height: auto;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .vieux_port figure img {
+    height: 140.5px; /* L'img restait à sa hauteur d'origine en version mobile */
+  }
 }
 
 .fort {
@@ -722,11 +754,30 @@ footer {
   line-height: 2em;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  footer {
+    padding: 20px;
+  }
+}
+
 footer ul {
   list-style-type: none;
   margin-right: 250px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  footer ul {
+    margin-right: 30%;
+  }
+}
+
 footer h2 {
   font-weight: bold;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  footer h2 {
+    padding-bottom: 0, 5em;
+    padding-top: 2em;
+  }
 }
