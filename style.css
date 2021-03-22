@@ -378,6 +378,7 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
 @media screen and (min-width: 320px) and (max-width: 750px) {
   #adresses_container {
     padding-bottom: 20px;
+    margin: 10px;
   }
 }
 
@@ -388,6 +389,7 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
 @media screen and (min-width: 320px) and (max-width: 750px) {
   #adresses_container > * {
     margin: 10px;
+    width: 100%;
   }
 }
 
@@ -402,7 +404,7 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
   #adresses_container figure {
-    width: 333px;
+    width: 100%;
     transition: none;
   }
 }
@@ -667,7 +669,7 @@ em {
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
   .vieux_port figure img {
-    height: 140.5px; /* L'img restait à sa hauteur d'origine en version mobile */
+    height: 70%; /* L'img restait à sa hauteur d'origine en version mobile */
   }
 }
 
@@ -682,6 +684,11 @@ em {
   height: 80%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+.fort figure img{
+  height: 70%;}
 }
 
 .îles {
@@ -716,6 +723,11 @@ em {
   -o-filter: brightness(120%);
   -ms-filter: brightness(120%);
 }
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .parc_calanques img {
+    height: 70%;}
+  }
 
 .notre_dame {
   grid-row: span 3;
