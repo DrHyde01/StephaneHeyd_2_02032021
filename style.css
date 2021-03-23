@@ -18,24 +18,12 @@ header {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  header {
-    justify-content: space-between;
-  }
-}
-
 .logo {
   /* Positionnement du logo en retrait du menu de navigation */
   margin-top: 8px;
   margin-left: 30px;
   width: 90px;
   order: 1;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .logo {
-    margin-top: 30px;
-  }
 }
 
 nav {
@@ -45,15 +33,7 @@ nav {
   order: 2;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  nav {
-    order: 3;
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
-/* @media screen and (min-width: 320px) and (max-width: 750px) Pour smartphones */
+/* @media screen and (min-width: 250px) and (max-width: 750px) Pour smartphones */
 
 .menu {
   display: flex;
@@ -70,28 +50,10 @@ nav {
   align-items: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .menu_item {
-    height: 40px;
-    width: 50%;
-    padding: 0;
-    justify-content: center;
-    border-bottom: solid 3px #f2f2f2;
-  }
-}
-
 .menu_item:hover /* Apparition d'une border-top et changement de couleur des liens lors du passage */ {
   border-top: solid 1px #0065fc;
   color: #0065fc;
   justify-self: end;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) /* hover semble pas adapté aux mobiles,
-  à vérifier */ {
-  .menu_item:hover {
-    border-top: none;
-    border-bottom: solid 3px #0065fc;
-  }
 }
 
 .subscribe {
@@ -100,13 +62,6 @@ nav {
   margin-right: 30px;
   margin-left: 30px;
   order: 3;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .subscribe {
-    order: 2;
-    margin-top: 30px;
-  }
 }
 
 a {
@@ -120,23 +75,10 @@ a {
   margin-left: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #recherche {
-    margin: 20px;
-  }
-}
-
 h1 {
   padding: 2px 0px 2px 0px;
   font-size: 1.3em;
   font-weight: bold;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  h1 {
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
 }
 
 h2 {
@@ -165,12 +107,6 @@ form {
   border-radius: 10px 0px 0px 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #ico_gps {
-    width: 30%;
-  }
-}
-
 input {
   height: 50px;
   width: 14rem;
@@ -193,25 +129,6 @@ button {
   border-radius: 0px 10px 10px 0px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  button {
-    width: 30%;
-  }
-}
-
-/* Remplacement du texte "rechercher" par une loupe sur version mobile */
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  span.text {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  span.icon {
-    display: none;
-  }
-}
-
 input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   color: black;
   opacity: 1;
@@ -225,13 +142,6 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   align-items: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #filtres {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 .filtre_title {
   margin-right: 2rem;
   font-weight: bold;
@@ -240,12 +150,6 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
 .filtre_container {
   display: flex;
   flex-wrap: wrap;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .filtre_container {
-    flex-wrap: wrap;
-  }
 }
 
 .filtre_button /* Personnalisation des filtres */ {
@@ -257,13 +161,6 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   margin-left: 1.5rem;
   border: solid 2px #f2f2f2;
   border-radius: 0px 30px 30px 0px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .filtre_button {
-    margin-top: 10px;
-    margin-right: 6px;
-  }
 }
 
 .filtre_button:hover {
@@ -296,13 +193,6 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   margin-left: -4px; /* Décalage de l'icône vers la gauche pour être mieux alignée */
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #infos {
-    margin-left: 0;
-    align-items: flex-start;
-  }
-}
-
 .info_icon {
   display: flex;
   justify-content: center;
@@ -314,12 +204,6 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   height: 25px;
   border: solid 2px #f2f2f2;
   border-radius: 50%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .info_icon {
-    width: 30px;
-  }
 }
 
 #infos > p {
@@ -334,20 +218,8 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #hébergements {
-    flex-wrap: wrap-reverse;
-  }
-}
-
 #hébergements > * {
   margin: 20px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #hébergements > * {
-    margin: 0;
-  }
 }
 
 #adresses {
@@ -358,15 +230,6 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   border-radius: 15px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses {
-    background-color: white;
-    width: 100%;
-    border-radius: 0;
-    padding-bottom: 10px;
-  }
-}
-
 #adresses_container {
   display: flex;
   justify-content: center;
@@ -375,22 +238,8 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses_container {
-    padding-bottom: 20px;
-    margin: 10px;
-  }
-}
-
 #adresses_container > * {
   margin: 20px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses_container > * {
-    margin: 10px;
-    width: 100%;
-  }
 }
 
 #adresses_container figure {
@@ -402,21 +251,8 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   transition: transform 300ms; /* cf hover */
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses_container figure {
-    width: 100%;
-    transition: none;
-  }
-}
-
 #adresses_container figure:hover /* Ajout d'une animation au passage de la souris */ {
   transform: translateY(-5px);
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses_container figure:hover {
-    transform: none;
-  }
 }
 
 #adresses_container figure > img {
@@ -427,32 +263,14 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   border-radius: 15px 15px 0px 0px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses_container figure > img {
-    width: 100%;
-  }
-}
-
 #adresses > h1 {
   font-weight: bold;
   padding-left: 40px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses > h1 {
-    padding-left: 20px;
-  }
-}
-
 #adresses > h2 {
   font-weight: bold;
   padding-left: 40px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #adresses > h2 {
-    padding-left: 20px;
-  }
 }
 
 #adresses figcaption {
@@ -492,26 +310,12 @@ em {
   padding-top: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #populaires {
-    width: 100%;
-    border-radius: 0;
-  }
-}
-
 #aside_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 35px;
   padding-right: 35px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #aside_title {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 #populaires_container {
@@ -526,25 +330,8 @@ em {
   padding-right: 16px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #populaires_container {
-    padding-top: 0;
-    padding-bottom: 25px;
-    padding-left: 0;
-    padding-right: 0;
-    align-items: initial;
-    margin: 10px;
-  }
-}
-
 #populaires_container > * {
   margin: 20px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #populaires_container > * {
-    margin: 10px;
-  }
 }
 
 #populaires_container figure {
@@ -557,21 +344,8 @@ em {
   transition: transform 300ms; /* cf hover */
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #populaires_container figure {
-    width: 100%;
-    transition: none;
-  }
-}
-
 #populaires_container figure:hover /* Ajout d'une animation au passage de la souris */ {
   transform: translateY(-5px);
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #populaires_container figure:hover {
-    transform: none;
-  }
 }
 
 #populaires_container figure > img {
@@ -595,12 +369,6 @@ em {
   padding-bottom: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #activités {
-    margin: 20px;
-  }
-}
-
 #activités h1 {
   padding-top: 15px;
   padding-bottom: 20px;
@@ -615,24 +383,6 @@ em {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #grid > * {
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-}
-
 #grid figure {
   display: flex;
   flex-direction: column;
@@ -640,12 +390,6 @@ em {
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 2px 15px #bdbdbd;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  #grid figure {
-    height: 190px;
-  }
 }
 
 #grid figcaption {
@@ -667,28 +411,16 @@ em {
   border-radius: 15px 15px 0px 0px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .vieux_port figure img {
-    height: 70%; /* L'img restait à sa hauteur d'origine en version mobile */
-  }
-}
-
 .fort {
   grid-row: 1 / span 4;
   grid-column: 3 / span 2;
   width: 100%;
 }
-
 .fort figure img {
   flex: 1;
   height: 80%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-.fort figure img{
-  height: 70%;}
 }
 
 .îles {
@@ -723,11 +455,6 @@ em {
   -o-filter: brightness(120%);
   -ms-filter: brightness(120%);
 }
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .parc_calanques img {
-    height: 70%;}
-  }
 
 .notre_dame {
   grid-row: span 3;
@@ -766,30 +493,197 @@ footer {
   line-height: 2em;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  footer {
-    padding: 20px;
-  }
-}
-
 footer ul {
   list-style-type: none;
   margin-right: 250px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  footer ul {
-    margin-right: 30%;
-  }
 }
 
 footer h2 {
   font-weight: bold;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
+/* VERSION MOBILE */
+
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  header {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-top: 30px;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu_item {
+    height: 40px;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    border-bottom: solid 3px #f2f2f2;
+  }
+  .menu_item:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+  /* Hoover non adaptés aux mobiles, à vérifier */
+
+  .subscribe {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  #recherche {
+    margin: 20px;
+  }
+  h1 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  #ico_gps {
+    width: 30%;
+  }
+  button {
+    width: 30%;
+  }
+
+  /* Remplacement du texte "rechercher" par une loupe sur version mobile */
+
+  span.text {
+    display: none;
+  }
+
+  #filtres {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtre_container {
+    flex-wrap: wrap;
+  }
+  .filtre_button {
+    margin-top: 10px;
+    margin-right: 6px;
+  }
+  #infos {
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .info_icon {
+    width: 30px;
+  }
+
+  #hébergements {
+    flex-wrap: wrap-reverse;
+  }
+  #hébergements > * {
+    margin: 0;
+  }
+  #adresses {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 10px;
+  }
+  #adresses_container {
+    padding-bottom: 20px;
+    margin: 10px;
+  }
+  #adresses_container > * {
+    margin: 10px;
+    width: 100%;
+  }
+  #adresses_container figure {
+    width: 100%;
+    transition: none;
+  }
+  #adresses_container figure:hover {
+    transform: none;
+  }
+  #adresses_container figure > img {
+    width: 100%;
+  }
+  #adresses > h1 {
+    padding-left: 20px;
+  }
+  #adresses > h2 {
+    padding-left: 20px;
+  }
+
+  #populaires {
+    width: 100%;
+    border-radius: 0;
+  }
+  #aside_title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #populaires_container {
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: initial;
+    margin: 10px;
+  }
+  #populaires_container > * {
+    margin: 10px;
+  }
+  #populaires_container figure {
+    width: 100%;
+    transition: none;
+  }
+  #populaires_container figure:hover {
+    transform: none;
+  }
+
+  #activités {
+    margin: 20px;
+  }
+  #grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    justify-content: center;
+  }
+  #grid > * {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #grid figure {
+    height: 190px;
+  }
+  .vieux_port figure img {
+    height: 70%; /* L'img restait à sa hauteur d'origine en version mobile */
+  }
+
+  .fort figure img {
+    height: 70%;
+  }
+  .parc_calanques img {
+    height: 70%;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer ul {
+    margin-right: 30%;
+  }
   footer h2 {
     padding-bottom: 0, 5em;
     padding-top: 2em;
   }
 }
+
+/* Afin d'afficher le terme "rechercher" au-dela d'une largeur de 750px */
+
+@media screen and (min-width: 750px) {
+  span.icon {
+    display: none;
+  }
+}
+
+/* Optimisation pour mobiles d'une largueur plus importante (entre 600px et 750px) /*
+
