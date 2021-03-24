@@ -667,23 +667,45 @@ footer h2 {
   }
   footer {
     padding: 20px;
+    padding-top: 0px;
   }
   footer ul {
     margin-right: 30%;
   }
   footer h2 {
-    padding-bottom: 0, 5em;
+    padding-bottom: 1em;
     padding-top: 2em;
   }
 }
 
 /* Afin d'afficher le terme "rechercher" au-dela d'une largeur de 750px */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 751px) {
   span.icon {
     display: none;
   }
 }
 
-/* Optimisation pour mobiles d'une largueur plus importante (entre 600px et 750px) /*
+/* Optimisation pour mobiles d'une largueur plus importante (entre 500px et 750px) */
 
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  #ico_gps {
+    width: 15%;
+  }
+
+  button {
+    width: 15%;
+  }
+
+  #adresses_container {
+    width: 80%;
+  }
+
+  #populaires_container {
+    width: 80%;
+  }
+
+  #grid {
+    width: 80%;
+  }
+}
