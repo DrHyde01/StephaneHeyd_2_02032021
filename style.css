@@ -85,14 +85,6 @@ h2 {
   font-weight: normal;
 }
 
-@media screen and (min-width: 750px) and (max-width: 1024px) {
-  h2 {
-    margin: 0;
-    text-align: center;
-    padding-bottom: 30px;
-  }
-}
-
 form {
   padding: 5px 0px 5px 0px;
   margin-top: 20px;
@@ -101,13 +93,6 @@ form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-@media screen and (min-width: 750px) and (max-width: 1024px) {
-  form {
-    width: 100%;
-    justify-content: center;
-  }
 }
 
 #ico_gps {
@@ -130,13 +115,6 @@ input {
   border-bottom: solid 1px #f2f2f2;
   border-left: none;
   border-right: none;
-}
-
-@media screen and (min-width: 750px) and (max-width: 1024px) {
-  input {
-    width: 50%;
-    text-align: center;
-  }
 }
 
 button {
@@ -443,12 +421,6 @@ em {
   border-radius: 15px 15px 0px 0px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .fort figure img {
-    height: 70%;
-  }
-}
-
 .îles {
   flex: 1;
   grid-row: 5 / span 2;
@@ -480,12 +452,6 @@ em {
   -moz-filter: brightness(120%);
   -o-filter: brightness(120%);
   -ms-filter: brightness(120%);
-}
-
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .parc_calanques img {
-    height: 70%;
-  }
 }
 
 .notre_dame {
@@ -536,7 +502,7 @@ footer h2 {
 
 /* VERSION MOBILE */
 
-@media screen and (min-width: 250px) and (max-width: 750px) {
+@media screen and (min-width: 250px) and (max-width: 749px) {
   header {
     justify-content: space-between;
   }
@@ -710,9 +676,9 @@ footer h2 {
   }
 }
 
-/* Afin d'afficher le terme "rechercher" au-dela d'une largeur de 750px */
+/* Afin d'afficher le terme "rechercher" au-dela d'une largeur de 1024px */
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 1025px) {
   span.icon {
     display: none;
   }
@@ -720,7 +686,7 @@ footer h2 {
 
 /* Optimisation pour mobiles d'une largueur plus importante (entre 500px et 750px) */
 
-@media screen and (min-width: 500px) and (max-width: 750px) {
+@media screen and (min-width: 500px) and (max-width: 749px) {
   #ico_gps {
     width: 15%;
   }
@@ -739,5 +705,181 @@ footer h2 {
 
   #grid {
     width: 80%;
+  }
+}
+
+/* VERSION TABLETTE */
+/* Max-width augmentée d'un px, pour rester en version tablette lors du passage en mode paysage */
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-top: 30px;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu_item {
+    height: 40px;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    border-bottom: solid 3px #f2f2f2;
+  }
+  .menu_item:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+  /* Hoover non adaptés aux mobiles, à vérifier */
+
+  .subscribe {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  #recherche {
+    margin: 20px;
+  }
+  h1 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  form {
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #ico_gps {
+    width: 10%;
+  }
+
+  input {
+    width: 50%;
+    text-align: center;
+  }
+
+  button {
+    width: 10%;
+  }
+
+  span.text {
+    display: none;
+  }
+
+  #filtres {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2.filtre_title {
+    display: none;
+  }
+
+  .filtre_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filtre_button {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  #infos {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  .info_icon {
+    width: 25px;
+  }
+
+  #hébergements {
+    flex-wrap: wrap-reverse;
+  }
+
+  #hébergements > * {
+    margin: 0;
+  }
+
+  #adresses {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 10px;
+  }
+  #adresses_container {
+    display: grid; /* Grid plus adapté à répartir les items en deux colonnes */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 40px;
+    row-gap: 0;
+  }
+  
+  #adresses_container > * {
+    width: 100%;
+  }
+  #adresses_container figure {
+    width: 100%;
+    transition: none;
+  }
+  #adresses_container figure:hover {
+    transform: none;
+  }
+  #adresses_container figure > img {
+    width: 100%;
+  }
+  #adresses > h1 {
+    padding-left: 20px;
+  }
+  #adresses > h2 {
+    padding-left: 20px;
+  }
+
+  #populaires {
+    width: 100%;
+    border-radius: 0;
+  }
+  #aside_title {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  #populaires_container {
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: initial;
+    margin: 10px;
+    flex-direction: row;
+  }
+  
+  #populaires_container figure {
+    transition: none;
+  }
+  #populaires_container figure:hover {
+    transform: none;
   }
 }
