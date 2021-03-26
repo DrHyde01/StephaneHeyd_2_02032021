@@ -9,6 +9,8 @@ body {
   font-size: 1em;
 }
 
+/* HEADER */
+
 header {
   display: flex;
   justify-content: space-around;
@@ -21,12 +23,14 @@ header {
   margin-top: 8px;
   margin-left: 30px;
   width: 90px;
+  order: 1;
 }
 
 nav {
   height: 100%;
   width: auto;
   margin-left: auto;
+  order: 2;
 }
 
 .menu {
@@ -55,12 +59,15 @@ nav {
   color: #0065fc;
   margin-right: 30px;
   margin-left: 30px;
+  order: 3;
 }
 
 a {
   text-decoration: none;
   color: inherit; /* Utilisation de la couleur du parent, plus de liens bleus */
 }
+
+/* RECHERCHE & FILTRES */
 
 #recherche {
   margin-left: 30px;
@@ -201,6 +208,8 @@ input::placeholder /* Rendre le placeholder noir sous Firefox */ {
   margin-left: 10px;
 }
 
+/* HEBERGEMENTS */
+
 #hébergements {
   display: flex;
   justify-content: center;
@@ -289,6 +298,8 @@ em {
   font-style: normal;
 }
 
+/* HEBERGEMENTS POPULAIRES */
+
 #populaires {
   height: auto;
   width: auto;
@@ -303,7 +314,6 @@ em {
   align-items: center;
   padding-left: 35px;
   padding-right: 35px;
-  
 }
 
 #populaires_container {
@@ -350,6 +360,8 @@ em {
   line-height: 1.2em;
 }
 
+/* ACTIVITES */
+
 #activités {
   margin: 30px;
   padding-bottom: 20px;
@@ -366,7 +378,7 @@ em {
   grid-template-rows: repeat(6, 45px);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 #grid figure {
@@ -402,7 +414,6 @@ em {
   grid-column: 3 / span 2;
   width: 100%;
 }
-
 .fort figure img {
   flex: 1;
   height: 80%;
@@ -469,6 +480,8 @@ em {
   border-radius: 15px 15px 0px 0px;
 }
 
+/* FOOTER */
+
 footer {
   background: #f2f2f2;
   height: auto;
@@ -485,4 +498,484 @@ footer ul {
 
 footer h2 {
   font-weight: bold;
+}
+
+/* VERSION MOBILE */
+
+@media screen and (min-width: 250px) and (max-width: 749px) {
+  header {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-top: 30px;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu_item {
+    height: 40px;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    border-bottom: solid 3px #f2f2f2;
+  }
+  .menu_item:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+  /* Hoover non adaptés aux mobiles, à vérifier */
+
+  .subscribe {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  #recherche {
+    margin: 20px;
+  }
+  h1 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  #ico_gps {
+    width: 30%;
+  }
+  button {
+    width: 30%;
+  }
+
+  /* Remplacement du texte "rechercher" par une loupe sur version mobile */
+
+  span.text {
+    display: none;
+  }
+
+  #filtres {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtre_container {
+    flex-wrap: wrap;
+  }
+  .filtre_button {
+    margin-top: 10px;
+    margin-right: 6px;
+  }
+  #infos {
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .info_icon {
+    width: 30px;
+  }
+
+  #hébergements {
+    flex-wrap: wrap-reverse;
+  }
+  #hébergements > * {
+    margin: 0;
+  }
+  #adresses {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 10px;
+  }
+  #adresses_container {
+    padding-bottom: 20px;
+    margin: 10px;
+  }
+  #adresses_container > * {
+    margin: 10px;
+    width: 100%;
+  }
+  #adresses_container figure {
+    width: 100%;
+    transition: none;
+  }
+  #adresses_container figure:hover {
+    transform: none;
+  }
+  #adresses_container figure > img {
+    width: 100%;
+  }
+  #adresses > h1 {
+    padding-left: 20px;
+  }
+  #adresses > h2 {
+    padding-left: 20px;
+  }
+
+  #populaires {
+    width: 100%;
+    border-radius: 0;
+  }
+  #aside_title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #populaires_container {
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: initial;
+    margin: 10px;
+  }
+  #populaires_container > * {
+    margin: 10px;
+  }
+  #populaires_container figure {
+    width: 100%;
+    transition: none;
+  }
+  #populaires_container figure:hover {
+    transform: none;
+  }
+
+  #activités {
+    margin: 20px;
+  }
+  #grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    justify-content: center;
+  }
+  #grid > * {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #grid figure {
+    height: 190px;
+  }
+  .vieux_port figure img {
+    height: 70%; /* L'img restait à sa hauteur d'origine en version mobile */
+  }
+
+  .fort figure img {
+    height: 70%;
+  }
+  .parc_calanques img {
+    height: 70%;
+  }
+  footer {
+    padding: 20px;
+    padding-top: 0px;
+  }
+  footer ul {
+    margin-right: 30%;
+  }
+  footer h2 {
+    padding-bottom: 1em;
+    padding-top: 2em;
+  }
+}
+
+/* Afin d'afficher le terme "rechercher" au-dela d'une largeur de 1024px */
+
+@media screen and (min-width: 1025px) {
+  span.icon {
+    display: none;
+  }
+}
+
+/* Optimisation pour mobiles d'une largueur plus importante (entre 500px et 750px) */
+
+@media screen and (min-width: 500px) and (max-width: 749px) {
+  #ico_gps {
+    width: 15%;
+  }
+
+  button {
+    width: 15%;
+  }
+
+  #adresses_container {
+    width: 80%;
+  }
+
+  #populaires_container {
+    width: 80%;
+  }
+
+  #grid {
+    width: 80%;
+  }
+}
+
+/* VERSION TABLETTE */
+/* Max-width augmentée d'un px, pour rester en version tablette lors du passage en mode paysage */
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-top: 30px;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu_item {
+    height: 40px;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    border-bottom: solid 3px #f2f2f2;
+  }
+  .menu_item:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+  }
+  /* Hoover non adaptés aux mobiles, à vérifier */
+
+  .subscribe {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  #recherche {
+    margin: 20px;
+  }
+  h1 {
+    margin-right: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  form {
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #ico_gps {
+    width: 10%;
+  }
+
+  input {
+    width: 50%;
+    text-align: center;
+  }
+
+  button {
+    width: 10%;
+  }
+
+  span.text {
+    display: none;
+  }
+
+  #filtres {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h2.filtre_title {
+    display: none;
+  }
+
+  .filtre_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filtre_button {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  #infos {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  .info_icon {
+    width: 25px;
+  }
+
+  #hébergements {
+    flex-wrap: wrap-reverse;
+  }
+
+  #hébergements > * {
+    margin: 0;
+  }
+
+  #adresses {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 10px;
+  }
+  #adresses_container {
+    display: grid; /* Grid plus adapté à répartir les items en deux colonnes */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    column-gap: 40px;
+    row-gap: 0;
+  }
+
+  #adresses_container > * {
+    width: 100%;
+  }
+  #adresses_container figure {
+    width: 100%;
+    transition: none;
+  }
+  #adresses_container figure:hover {
+    transform: none;
+  }
+  #adresses_container figure > img {
+    width: 100%;
+  }
+  #adresses > h1 {
+    padding-left: 0;
+  }
+
+  #adresses > h2 {
+    padding-left: 0;
+  }
+
+  #populaires {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #aside_title {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  #populaires_container {
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: initial;
+    margin: 10px;
+    flex-direction: row;
+  }
+
+  #populaires_container figure {
+    transition: none;
+  }
+
+  #populaires_container figure:hover {
+    transform: none;
+  }
+
+  #activités {
+    margin: 0;
+  }
+
+  #grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #grid figure {
+    width: 100%;
+    height: 190px;
+  }
+
+  .vieux_port {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .vieux_port figure img {
+    height: 70%; /* L'img restait à sa hauteur d'origine en version mobile */
+  }
+
+  .fort {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .fort figure img {
+    height: 70%;
+  }
+
+  .îles {
+    grid-row: 3;
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .parc_calanques {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .parc_calanques img {
+    height: 70%;
+  }
+
+  .notre_dame {
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .parc_longchamp {
+    grid-row: 3;
+    grid-column: 2;
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    padding-top: 0px;
+  }
+
+  footer ul {
+    margin-right: 0;
+    margin-left: 0;
+    width: 33.3%;
+  }
+
+  footer li {
+    text-align: center;
+  }
+
+  footer h2 {
+    padding-bottom: 1em;
+    padding-top: 2em;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

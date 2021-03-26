@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <!-- Viewport pour affichage mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <!--Utilisation d'une Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -43,7 +45,10 @@
         </div>
         <!-- Insertion d'une icône Font Awesome-->
         <input type="text" name="ville" placeholder="Marseille, France" />
-        <button type="submit">Rechercher</button>
+        <button type="submit">
+          <span class="text">Rechercher</span>
+          <span class="icon"><i class="fas fa-search"></i></span>
+        </button>
       </form>
       <div id="filtres">
         <h2 class="filtre_title">Filtres</h2>
