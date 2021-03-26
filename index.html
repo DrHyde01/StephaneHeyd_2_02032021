@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <!-- Viewport pour affichage mobile -->
+    <!-- Viewport pour version mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <!--Utilisation d'une Google font -->
@@ -40,10 +40,11 @@
       <h2>En plein centre ville ou en pleine nature</h2>
       <!-- Mise en place du formulaire de recherche -->
       <form method="post" action="#">
+        <!-- Insertion d'une icône Font Awesome-->
         <div id="ico_gps">
           <i class="fas fa-map-marker-alt"></i>
         </div>
-        <!-- Insertion d'une icône Font Awesome-->
+
         <input type="text" name="ville" placeholder="Marseille, France" />
         <button type="submit">
           <span class="text">Rechercher</span>
@@ -82,15 +83,14 @@
 
     <!-- HEBERGEMENTS-->
     <section id="hébergements">
+      <!-- id "adresses" permettant de rajouter le bloc gris en css-->
       <div id="adresses">
-        <!-- id permettant de rajouter le bloc gris en css-->
-
         <h1>Hébergements à Marseille</h1>
 
         <div id="adresses_container">
+          <!-- Rendre la figure cliquable dans son intégralité -->
           <a href="#">
             <figure>
-              <!-- Rendre la figure cliquable dans son intégralité -->
               <img
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="Auberge la Cannebière"
@@ -277,9 +277,8 @@
     <section id="activités">
       <h1>Activités à Marseille</h1>
 
+      <!-- Mise en place de la grille pour placer les 6 éléments-->
       <div id="grid">
-        <!-- Mise en place de la grille pour placer les 6 éléments-->
-
         <div class="vieux_port">
           <a href="#">
             <figure>

@@ -503,7 +503,6 @@ footer h2 {
 /* OPITMISATION POUR ECRANS HD */
 
 @media screen and (min-width: 1824px) {
-  
   header {
     margin-left: 10%;
     margin-right: 10%;
@@ -513,7 +512,7 @@ footer h2 {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+
   #adresses {
     width: 50%;
   }
@@ -534,21 +533,23 @@ footer h2 {
   }
 }
 
-
 /* VERSION MOBILE */
 
 @media screen and (min-width: 250px) and (max-width: 749px) {
   header {
     justify-content: space-between;
   }
+
   .logo {
     margin-top: 30px;
   }
+
   nav {
     order: 3;
     width: 100%;
     margin-top: 20px;
   }
+
   .menu_item {
     height: 40px;
     width: 50%;
@@ -556,6 +557,7 @@ footer h2 {
     justify-content: center;
     border-bottom: solid 3px #f2f2f2;
   }
+
   .menu_item:hover {
     border-top: none;
     border-bottom: solid 3px #0065fc;
@@ -570,13 +572,16 @@ footer h2 {
   #recherche {
     margin: 20px;
   }
+
   h1 {
     margin-right: 20px;
     margin-bottom: 10px;
   }
+
   #ico_gps {
     width: 30%;
   }
+
   button {
     width: 30%;
   }
@@ -591,17 +596,21 @@ footer h2 {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .filtre_container {
     flex-wrap: wrap;
   }
+
   .filtre_button {
     margin-top: 10px;
     margin-right: 6px;
   }
+
   #infos {
     margin-left: 0;
     align-items: flex-start;
   }
+
   .info_icon {
     width: 30px;
   }
@@ -609,36 +618,45 @@ footer h2 {
   #hébergements {
     flex-wrap: wrap-reverse;
   }
+
   #hébergements > * {
     margin: 0;
   }
+
   #adresses {
     background-color: white;
     width: 100%;
     border-radius: 0;
     padding-bottom: 10px;
   }
+
   #adresses_container {
     padding-bottom: 20px;
     margin: 10px;
   }
+
   #adresses_container > * {
     margin: 10px;
     width: 100%;
   }
+
   #adresses_container figure {
     width: 100%;
     transition: none;
   }
+
   #adresses_container figure:hover {
     transform: none;
   }
+
   #adresses_container figure > img {
     width: 100%;
   }
+
   #adresses > h1 {
     padding-left: 20px;
   }
+
   #adresses > h2 {
     padding-left: 20px;
   }
@@ -647,10 +665,12 @@ footer h2 {
     width: 100%;
     border-radius: 0;
   }
+
   #aside_title {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   #populaires_container {
     padding-top: 0;
     padding-bottom: 25px;
@@ -659,13 +679,16 @@ footer h2 {
     align-items: initial;
     margin: 10px;
   }
+
   #populaires_container > * {
     margin: 10px;
   }
+
   #populaires_container figure {
     width: 100%;
     transition: none;
   }
+
   #populaires_container figure:hover {
     transform: none;
   }
@@ -673,6 +696,7 @@ footer h2 {
   #activités {
     margin: 20px;
   }
+
   #grid {
     width: 100%;
     display: flex;
@@ -681,13 +705,16 @@ footer h2 {
     grid-column-gap: 0px;
     justify-content: center;
   }
+
   #grid > * {
     margin-bottom: 10px;
     margin-top: 10px;
   }
+
   #grid figure {
     height: 190px;
   }
+
   .vieux_port figure img {
     height: 70%; /* L'img restait à sa hauteur d'origine en version mobile */
   }
@@ -695,16 +722,20 @@ footer h2 {
   .fort figure img {
     height: 70%;
   }
+
   .parc_calanques img {
     height: 70%;
   }
+
   footer {
     padding: 20px;
     padding-top: 0px;
   }
+
   footer ul {
     margin-right: 30%;
   }
+
   footer h2 {
     padding-bottom: 1em;
     padding-top: 2em;
@@ -750,14 +781,17 @@ footer h2 {
   header {
     justify-content: space-between;
   }
+
   .logo {
     margin-top: 30px;
   }
+
   nav {
     order: 3;
     width: 100%;
     margin-top: 20px;
   }
+
   .menu_item {
     height: 40px;
     width: 50%;
@@ -765,6 +799,7 @@ footer h2 {
     justify-content: center;
     border-bottom: solid 3px #f2f2f2;
   }
+
   .menu_item:hover {
     border-top: none;
     border-bottom: solid 3px #0065fc;
@@ -779,6 +814,7 @@ footer h2 {
   #recherche {
     margin: 20px;
   }
+
   h1 {
     margin-right: 20px;
     margin-left: 10%;
@@ -874,16 +910,20 @@ footer h2 {
   #adresses_container > * {
     width: 100%;
   }
+
   #adresses_container figure {
     width: 100%;
     transition: none;
   }
+
   #adresses_container figure:hover {
     transform: none;
   }
+
   #adresses_container figure > img {
     width: 100%;
   }
+
   #adresses > h1 {
     padding-left: 0;
   }
