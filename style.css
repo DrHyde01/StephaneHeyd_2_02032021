@@ -500,6 +500,41 @@ footer h2 {
   font-weight: bold;
 }
 
+/* OPITMISATION POUR ECRANS HD */
+
+@media screen and (min-width: 1824px) {
+  
+  header {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #recherche {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  #adresses {
+    width: 50%;
+  }
+
+  #grid {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #activités h1 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+
 /* VERSION MOBILE */
 
 @media screen and (min-width: 250px) and (max-width: 749px) {
