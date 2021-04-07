@@ -403,7 +403,7 @@ em {
 }
 
 .vieux_port figure img {
-  flex: 1;
+  flex: 1; /* Pour que le même espace soit utilisé */
   height: auto;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
